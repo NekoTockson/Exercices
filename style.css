@@ -30,12 +30,8 @@
 .w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
 
 body {
+    background-color: rgb(150, 148, 148);
     font-family: Arial, sans-serif;
-    background: url(../img/CatBoat.mp4) no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    cursor: url('../img/cursor.cur'), auto;
-    margin: 0;
    }
    .container {
     max-width: 400px;
