@@ -1,5 +1,5 @@
 #divParent{
-  background-color: #31b5ac;
+  background-color: gold;
   width: 400px;
   height: 400px;
   margin: auto;
@@ -9,7 +9,7 @@
 }
 
 /********************************************************** CSS signup *****************************************************/
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;background-color: rebeccapurple;}
 * {box-sizing: border-box;}
 
 /* Full-width input fields */
@@ -23,10 +23,11 @@ input[type=text], input[type=password] {
 }
 
 #butInscription{
-  background-color: #c3cb20;
-  border-color: rgb(90, 80, 80);
+  background-color: gold;
+  border-color: rebeccapurple;
   border-style: solid;
   border-width: 3px;
+  color: rebeccapurple;
 }
 
 /* Add a background color when the inputs get focus */
@@ -37,8 +38,8 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
-  color: white;
+  background-color: rebeccapurple;
+  color: gold;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -54,7 +55,7 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: red;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -78,21 +79,21 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: rebeccapurple;
   padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: rebeccapurple;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  border: 1px solid gold;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid gold;
   margin-bottom: 25px;
 }
  
@@ -103,7 +104,7 @@ hr {
   top: 15px;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: rebeccapurple;
 }
 
 .close:hover,
@@ -133,21 +134,22 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid gold;
   box-sizing: border-box;
 }
 
 #butConnexion{
-  background-color: #8c9217;
-  border-color: rgb(90, 80, 80);
+  background-color: gold;
+  border-color: rebeccapurple;
   border-style: solid;
   border-width: 3px;
+  color: rebeccapurple;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
-  color: white;
+  background-color: gold;
+  color: rebeccapurple;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -204,9 +206,9 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: rebeccapurple;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  border: 1px solid gold;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 

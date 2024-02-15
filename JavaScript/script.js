@@ -5,7 +5,9 @@ function save(){
     
     alert(nom + ", " + prenom)
     localStorage.setItem("nom", nom);
-    localStorage.setItem("prénom", prenom)
+    localStorage.setItem("prénom", prenom);
+
+    window.location.replace(acceuil.html);
 }
 
 const taskInput = document.getElementById("taskInput") ;
