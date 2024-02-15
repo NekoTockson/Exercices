@@ -17,9 +17,12 @@ const taskList = document.getElementById("taskList") ;
 const clearAll = document.getElementById("clearAll")
 
 var task = "undone task ";
+
 var done = "task done ";
+
 var i = 0;
 var j = 0;
+
 // La fonction trim() en JavaScript est utilisée pour supprimer les espaces (espaces, tabulations et
 
 //nouvelles lignes) au début et à la fin d'une chaîne.
@@ -32,7 +35,7 @@ function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
 }
  
- function w3_close() {
+function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 
@@ -97,12 +100,12 @@ function addTask() {
     listItem.remove();
 
     });
-
-
-    }else{
+    }
+    else{
         alert("Veuillez entrer une tâche valide.");
     }
 localStorage.setItem(task.concat(i), (taskText), i++)
+
 clearAll.addEventListener("click", () => {
     localStorage.clear()
 })
