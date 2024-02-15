@@ -12,7 +12,10 @@
 
     <link rel="stylesheet" target=_blank href="style.css">
 
- 
+    <video id="background-video" autoplay loop muted poster="./img/CatBoat.mp4">
+        <source src="./img/CatBoat.mp4" type="video/mp4">
+    </video>
+      
 
 </head>
 
@@ -23,7 +26,7 @@
         <button onclick="w3_close()">Close &times;</button>
         <a href="https://psnprofiles.com/Tockson002" class="w3-bar-item button">PSN</a>
         <a href="https://www.paypal.com/paypalme/NekoTockson" class="w3-bar-item button">Support Me</a>
-        <a href="#" class="w3-bar-item button">Link 3</a>
+        <a href="https://open.spotify.com/intl-fr/artist/2UwqpfQtNuhBwviIC0f2ie" class="w3-bar-item button">Support my brother</a>
     </div>
 
     <!-- Bouton de la barre latérale -->
@@ -44,8 +47,9 @@
         <button id="addTask">Ajouter</button>
 
         </div>
-
-        <ul id="taskList"></ul>
+        <div class="listeTaches">
+            <ul id="taskList"></ul>
+        </div>
 
         <button id="clearAll">Enlever du stockage local</button>
 

@@ -1,10 +1,15 @@
-#background-video { /* sert à mettre la vidéo en fond d'écran */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     position: fixed;
+    left: 0;
     right: 0;
+    top: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
+    z-index: -1;
+  }  
+
 #addTask{
     background-color: rebeccapurple;
     color: gold;
@@ -25,7 +30,7 @@
     left: 0;
 }
 
-.w3-sidebar{height:100%;width:200px;background-color:rgb(184, 178, 178);position:fixed!important;z-index:1;overflow:none}
+.w3-sidebar{height:auto ;width: 200px ;background-color:rgba(17, 18, 74, 0.55) ;position:fixed!important ;z-index:1 ;overflow:none}
 .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
 
@@ -33,7 +38,7 @@ body {
     background-color: rgb(150, 148, 148);
     font-family: Arial, sans-serif;
    }
-   .container {
+   .container{
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -51,8 +56,8 @@ body {
     opacity: 0.7;
    }
    button{
-    background-color: #8CC653;
-    color: #000080;
+    background-color: rebeccapurple;
+    color: gold;
    }
 .centrerhaut{
     text-align: center;
@@ -60,4 +65,7 @@ body {
 #taskDone{
     text-decoration: line-through;
     opacity: 0.7;
+}
+a:visited{
+    color: gold;
 }
