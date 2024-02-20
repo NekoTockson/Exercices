@@ -37,6 +37,7 @@
 body {
     background-color: rgb(150, 148, 148);
     font-family: Arial, sans-serif;
+    cursor: url('../img/cursor.cur'), auto;
    }
    .container{
     max-width: 400px;
