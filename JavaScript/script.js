@@ -16,7 +16,9 @@ const addTaskBtn = document.getElementById("addTask") ;
 
 const taskList = document.getElementById("taskList") ;
 
-const clearAll = document.getElementById("clearAll")
+const clearAll = document.getElementById("clearAll") ;
+
+const groupList = document.getElementById("groupList") ;
 
 var task = "undone task ";
 
@@ -91,21 +93,47 @@ function addTask() {
     deleteBtn.setAttribute('height', '18px');
     deleteBtn.setAttribute('width', '18px');
 
-    // La méthode JavaScript appendChild() est utilisée pour insérer un nouveau noeud ou repositionner un
-
-    //noeud existant en tant que dernier enfant d'un noeud parent particulier.
-
     listItem.appendChild(deleteBtn);
 
     deleteBtn.addEventListener("click", () => {
 
-    listItem.remove();
+        listItem.remove();
 
     });
+
+    /*const groupInput = document.createElement("input")
+    const addGroupButton = document.createElement("button")
+    groupInput.setAttribute('height', '18px');
+    groupInput.setAttribute('width', '5px');
+    groupInput.setAttribute("placeholder", "Group")
+    addGroupButton.textContent = "Add"
+    addGroupButton.setAttribute("onclick", "addGroup()")
+
+    listItem.appendChild(groupInput)
+    listItem.appendChild(addGroupButton)
+
+    addGroupButton.addEventListener("click", () => {
+
+        const groupItem = document.createElement("li");
+
+        groupItem.value = groupInput;
+
+        groupList.appendChild(groupItem);
+
+        groupInput.textContent = ""
+    })*/
+
+    // La méthode JavaScript appendChild() est utilisée pour insérer un nouveau noeud ou repositionner un
+
+    //noeud existant en tant que dernier enfant d'un noeud parent particulier.
+
+    
     }
     else{
         alert("Veuillez entrer une tâche valide.");
     }
+
+
 localStorage.setItem(task.concat(i), (taskText), i++)
 
 clearAll.addEventListener("click", () => {
