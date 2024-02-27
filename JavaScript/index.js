@@ -1,14 +1,15 @@
 ////////////////// Obtenez le modal d'inscription ///////////////////////
 
-function login (){
-  const uname = document.getElementById("uname").value;
-  const pwsd = document.getElementById("pswd").value;
+function login (event){
+  event.preventDefault();
+  const uname = document.getElementById("unameLogin").value;
+  const pwsd = document.getElementById("pswdLogin").value;
 
-  const unameLogin = document.getElementById("uname").value;
-  const pwsdLogin = document.getElementById("pswd").value;
+  const unameLogin = localStorage.getItem("uname");
+  const pwsdLogin = localStorage.getItem("pswd");
 
   if(uname === unameLogin && pwsd === pwsdLogin){
-      window.location.href = "./accueil.html";
+      window.location.replace("../accueil.html")
   }
   else{
     alert("Nuh uh")
