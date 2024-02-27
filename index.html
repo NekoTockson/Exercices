@@ -29,7 +29,7 @@
         <input type="password" placeholder="Entrer le mot de passe" id="pswd" name="pswd" required>
 
         <label for="psw-repeat"><b>Répéter le mot de passe</b></label>
-        <input id="repeatPSWD" type="password" placeholder="Répéter le mot de passe" name="psw-repeat" required>
+        <input id="repeatPSWD" type="password" placeholder="Répéter le mot de passe" name="pswd-repeat" required>
         
         <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Se souvenir de moi
@@ -39,7 +39,7 @@
 
         <div class="clearfix">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn" onclick="register()">S'inscrire</button>
+            <button type="submit" class="signupbtn" onclick="register(event)">S'inscrire</button>
         </div>
         </div>
     </form>
@@ -58,12 +58,11 @@
 
         <div class="container">
         <label for="uname"><b>E-mail</b></label>
-        <input type="text" placeholder="Saisissez votre e-mail" id="unameConnect" name="uname" required>
+        <input type="text" placeholder="Saisissez votre e-mail" id="unameLogin" name="uname" required>
         <label for="psw"><b>Mot de passe</b></label>
-        <input type="password" placeholder="Entrer le mot de passe" id="pswdConnect" name="psw" required>
+        <input type="password" placeholder="Entrer le mot de passe" id="pswdLogin" name="psw" required>
         </div>
-
-        <button id="sub" onclick="login()">Se connecter</button>
+        <a href="accueil.html" id="MoveWS"><button id="sub" onclick="login(event)">Se connecter</button></a>
 
         <label>
             <input type="checkbox" checked="checked" name="remember"> Souviens-toi de moi

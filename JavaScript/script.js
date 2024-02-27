@@ -1,13 +1,27 @@
-function save(){
-    let nom = document.getElementById("lastname").value;
-    let prenom = document.getElementById("firstname").value;
+function userInfo(event){
+    event.preventDefault()
+    const userNameLog = document.getElementById("unameLogin").value;
+    const userPswdLog = document.getElementById("pswdLogin").value;
+    const loginName = localStorage.getItem("uname");
+    const loginPswd = localStorage.getItem("pswd");
+    if ((userPswdLog === loginPswd) && (userNameLog === loginName)){
+        moveWS.style.display = "none";}
+    else {
+        alert("Nom ou mot de passe invalide.");
+    }
+}
+function regist (event){
+    event.preventDefault()
+    const moveWS = document.getElementById("moveWS");
+    const username = document.getElementById("uname").value;
+    const userPswdReg = document.getElementById("pswd").value;
+    const pswdConfirm = document.getElementById("repeatPSWD").value;
+    if (userPswdReg === pswdConfirm){
+        localStorage.setItem("uname", username)
+        localStorage.setItem("pswd", userPswdReg)
+        
+    }
 
-    
-    alert(nom + ", " + prenom)
-    localStorage.setItem("nom", nom);
-    localStorage.setItem("prénom", prenom);
-
-    window.location.replace(acceuil.html);
 }
 
 const taskInput = document.getElementById("taskInput") ;
